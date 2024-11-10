@@ -1,0 +1,12 @@
+name: myenv  # Name of your environment
+channels:
+  - defaults  # The default Conda channel, you can add others if needed (like conda-forge)
+dependencies:
+  - python
+  - pip  # Ensure pip is included
+  - matplotlib
+  - opencv
+  - torch  # PyTorch (and GPU if you need it)
+  - pip:
+    - ultralytics  # Packages not available via Conda, to be installed via pip
+    - roboflow
