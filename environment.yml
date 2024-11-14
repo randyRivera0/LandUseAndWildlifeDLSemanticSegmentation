@@ -1,10 +1,23 @@
 name: myenv  # Name of your environment
 channels:
   - defaults
+  - anaconda
+  - pytorch
+  - nvidia
 dependencies:
-  - python
-  - pip  # Ensure pip is included
+  - python=3.8
+  - pip
   - matplotlib
+  - cudatoolkit  # CUDA Toolkit for GPU acceleration
+  - pytorch       # PyTorch for deep learning
+  - torchvision   # PyTorch library for computer vision
+  - torchaudio    # PyTorch library for audio processing
+  - pytorch-cuda=12.4  # Specific CUDA version for PyTorch
+  - ipykernel      # Add ipykernel to run Python cells in Jupyter
+  - opencv  # OpenCV for image and video processing
+  - pillow  # Python Imaging Library (PIL) fork
+  - requests  # For making HTTP requests
+  - ultralytics  # YOLOv5 and YOLOv8 for object detection
   - pip:
-    - ultralytics  # Packages not available via Conda, to be installed via pip
-    - roboflow
+      - roboflow  # Roboflow for dataset management
+      - glob2  # Glob functionality for file searching
