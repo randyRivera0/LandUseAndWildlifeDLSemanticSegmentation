@@ -1,0 +1,24 @@
+# Conda environment files
+*.conda
+*.env
+*.yaml
+
+# Ignore the default environment directories
+env/
+envs/
+conda-meta/
+__pycache__/
+
+# Python cache and compiled files
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Conda environment logs and history
+conda-meta/history
+
+# Jupyter Notebook checkpoints (if using Jupyter)
+.ipynb_checkpoints/
+
+/myenv/
