@@ -4,11 +4,12 @@ channels:
   - anaconda
   - pytorch
   - nvidia
+  - conda-forge
 dependencies:
-  - python=3.8
+  - python
   - pip
   - matplotlib
-  - cudatoolkit  # CUDA Toolkit for GPU acceleration
+  - cudatoolkit # Match CUDA toolkit with PyTorch version
   - pytorch       # PyTorch for deep learning
   - torchvision   # PyTorch library for computer vision
   - torchaudio    # PyTorch library for audio processing
