@@ -22,3 +22,5 @@ conda-meta/history
 .ipynb_checkpoints/
 
 /myenv/
+
+datasets/
